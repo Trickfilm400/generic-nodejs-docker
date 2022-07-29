@@ -62,4 +62,4 @@ the zip file must include a subfolder like a zip folder from GitHub
 
 I was too lazy to make an autodetect thing for this.
 
-© Trickfilm400 14.08.2021 - 27.08.2021
+© Trickfilm400 14.08.2021 - 27.08.2021 - 29.07.2022
