@@ -1,4 +1,4 @@
-FROM node:14-alpine3.14
+FROM node:16-alpine3.16
 
 MAINTAINER Trickfilm400 <info@trickfilm400.de>
 
