@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:20-alpine
 
 MAINTAINER Trickfilm400 <info@trickfilm400.de>
 

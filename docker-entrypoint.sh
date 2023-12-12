@@ -14,8 +14,8 @@ if [[ -f /app/package.json ]] && [[ ${CACHE} = "true" ]]; then
           sh -c "npm run build"
     else
           # install only dependencies for production, withput devDependencies
-          echo "Installing Dependencies.... [npm ci --only=production]"
-          sh -c "npm ci --only=production"
+          echo "Installing Dependencies.... [npm ci --omit=dev]"
+          sh -c "npm ci --omit=dev --audit=false --fund=false"
     fi
     # run script from package.json start script
     echo "Running [npm start] to start your nodejs program..."
@@ -57,7 +57,7 @@ else
              else
                  # install only dependencies for production (without devDependencies)
                  echo "Installing Dependencies.... [npm ci]"
-                 sh -c "npm ci"
+                 sh -c "npm ci --audit=false --fund=false"
              fi
              # start nodejs project via package.json start script
              echo "Running [npm start] to start your nodejs program..."
